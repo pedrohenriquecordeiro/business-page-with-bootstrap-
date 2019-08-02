@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.min.css">
+    <!-- 
+            * configura para que a dimensao width sera a do dispositivo
+            * configura a escala para o padrao
+        -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+
+
+
+<body>
+    <div class="container">
+        <h2>Sobre nós</h2>
+        <img class="img-responsive" src="imagens/img_gabarito.jpg">
+
+        <!-- panel-group é para que apenas um panel-body fique aberto por vez -->
+        <div style="margin-top: 20px" class="panel-group" id="parent_panel">
+            <!-- panel para construir um panel -->
+            <div class="panel panel-default">
+                <!-- panel-heading cabeçalho do panel -->
+                <div class="panel-heading">
+                    <h3 class="panel-title" data-toggle="collapse" data-target="#p1" data-parent="#parent_panel">Iniciativa</h3>
+                </div>
+                <!-- essa div é para que o panel-body collapse -->
+                <div class="collapse in" id="p1">
+                    <!-- corpo do panel -->
+                    <div class="panel-body">
+                        <p>O objetivo é levar flexibilidade e organização aos estudos para concursos e vestibulares!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title" data-toggle="collapse" data-target="#p2" data-parent="#parent_panel">Diferencial</h3>
+                </div>
+                <div class="collapse" id="p2">
+                    <div class="panel-body">
+                        <p>Oferecemos um serviço grátis e aberto a colaboração !</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title" data-toggle="collapse" data-target="#p3" data-parent="#parent_panel">Do que se trata ?</h3>
+                </div>
+                <div class="collapse" id="p3">
+                    <div class="panel-body">
+                        <p>A plataforma é voltada para organização de seus estudos. Onde você pode registrar
+                            todas as questões que você ja resolveu, suas apostilas, vídeos e pode também utilizar de
+                            outros
+                            materias
+                            cadastrados por outros usuários</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery deve ser importado primeiro que .js -->
+    <script src="jquery.js"></script>
+    <script src="bootstrap-3.3.7/js/bootstrap.js"></script>
+</body>
+
+</html>
